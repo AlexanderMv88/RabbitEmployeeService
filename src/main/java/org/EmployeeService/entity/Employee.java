@@ -35,6 +35,11 @@ public class Employee implements Serializable {
         this.fullName = fullName;
     }
 
+
+    public void setData(String fullName) {
+        this.fullName = fullName;
+    }
+
     public Employee() {
     }
 

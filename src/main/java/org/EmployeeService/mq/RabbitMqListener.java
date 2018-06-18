@@ -2,6 +2,7 @@ package org.EmployeeService.mq;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.type.CollectionType;
 import org.EmployeeService.entity.Employee;
 import org.EmployeeService.repository.EmployeeRepository;
 import org.springframework.amqp.core.Message;
@@ -112,6 +113,33 @@ public class RabbitMqListener {
                         e.printStackTrace();
                     }
                 }
+            }else if (EMPLOYEE_UPDATE_EVENT.equals(action)) {
+                System.out.println("get message with action "+action+" "+body);
+                ObjectMapper mapper = new ObjectMapper();
+                CollectionType javaType = mapper.getTypeFactory()
+                        .constructCollectionType(List.class, Employee.class);
+
+                List<Employee> employees = mapper.readValue(body, javaType);
+                //TODO: replace Employee to List<Employee>
+                Employee oldEmployee = employees.get(0);
+                Employee newEmployee = employees.get(1);
+
+                Employee oldEmployeeFromDB = employeeRepository.findById(oldEmployee.getId()).get();
+                oldEmployeeFromDB.setData(newEmployee.getFullName());
+                employeeRepository.save(oldEmployee);
+                new RabbitMqPublisher().sendUpdatedMessage(rabbitTemplate, oldEmployee, newEmployee);
+                //return null;
+                /*Employee employee =  new ObjectMapper().readValue(body, Employee.class);
+                employeeRepository.delete(employee);
+                if (!employeeRepository.findById(employee.getId()).isPresent()){
+                    try {
+                        new RabbitMqPublisher().sendDeletedMessage(rabbitTemplate, employee);
+
+                    } catch (JsonProcessingException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }*/
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();

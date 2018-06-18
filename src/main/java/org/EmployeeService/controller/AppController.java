@@ -49,14 +49,9 @@ public class AppController {
                 .forEach(employee -> {
                     String jsonEmployee= null;
                     try {
-                        jsonEmployee = new ObjectMapper().writeValueAsString(employeeRepository.save(employee));
-                        System.out.println("create message with employee "+jsonEmployee);
-                        Message msg = createMessage(EMPLOYEE_CREATED_EVENT, jsonEmployee);
-                        System.out.println("Send message "+msg+" using rabbit template "+rabbitTemplate);
-                        rabbitTemplate.setExchange(FROM_SERVICE_EMPLOYEE_FANOUT_EXCHANGE);
-                        rabbitTemplate.send(msg);
-                        //rabbitTemplate.convertAndSend(jsonEmployee);
-                        //new RabbitMqPublisher().send("employee-event-fanout-exchange", FROM_SERVICE_EMPLOYEE_EVENT_QUEUE,jsonEmployee );
+                        Employee empl = employeeRepository.save(employee);
+                        new RabbitMqPublisher().sendCreatedMessage(rabbitTemplate,empl);
+
                     } catch (JsonProcessingException e) {
                         e.printStackTrace();
                     }
@@ -71,26 +66,20 @@ public class AppController {
         if (employee.getFullName() == null) return ResponseEntity.unprocessableEntity().build();
 
         Employee newEmployee = employeeRepository.save(employee);
-        //template.setExchange("exchange-example-3");
-
-/*
         try {
-            String jsonEmployee= new ObjectMapper().writeValueAsString(newEmployee);
-            template.setExchange("employee-created-fanout");
-            template.convertAndSend(EMPLOYEE_CREATED_QUEUE, jsonEmployee);
+            new RabbitMqPublisher().sendCreatedMessage(rabbitTemplate,newEmployee);
+            URI location = ServletUriComponentsBuilder
+                    .fromCurrentRequest()
+                    .path("/{id}")
+                    .buildAndExpand(newEmployee)
+                    .toUri();
+
+            return ResponseEntity.created(location).build();
         } catch (JsonProcessingException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
-*/
-        URI location = ServletUriComponentsBuilder
-                .fromCurrentRequest()
-                .path("/{id}")
-                .buildAndExpand(newEmployee)
-                .toUri();
-
-        return ResponseEntity.created(location).build();
+        return null;
     }
 
     @RequestMapping(value = "/changeEmployee/{id}", method = RequestMethod.PUT)
@@ -103,6 +92,17 @@ public class AppController {
             //oldEmpl = employeeForChange.get();
             employeeForChange.get().setFullName(employee.getFullName());
             Employee changedEmployee = employeeRepository.save(employeeForChange.get());
+
+            try {
+                new RabbitMqPublisher().sendUpdatedMessage(rabbitTemplate,oldEmpl,changedEmployee);
+                URI location = ServletUriComponentsBuilder
+                        .fromCurrentRequest()
+                        .buildAndExpand(employeeForChange.get().getId()).toUri();
+
+                return ResponseEntity.created(location).build();
+            } catch (JsonProcessingException e) {
+                e.printStackTrace();
+            }
             /*
             try {
                 String jsonEmployeeForChange= new ObjectMapper().writeValueAsString(oldEmpl);
@@ -114,11 +114,7 @@ public class AppController {
                 e.printStackTrace();
             }
 */
-            URI location = ServletUriComponentsBuilder
-                    .fromCurrentRequest()
-                    .buildAndExpand(employeeForChange.get().getId()).toUri();
-
-            return ResponseEntity.created(location).build();
+            return null;
         }else{
             return ResponseEntity.notFound().build();
 
