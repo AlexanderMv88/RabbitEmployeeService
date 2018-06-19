@@ -91,8 +91,8 @@
       <file leaf-file-name="EmployeeAmqpTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2291">
-              <caret line="176" selection-start-line="176" selection-end-line="176" />
+            <state relative-caret-position="326">
+              <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3363#3373#0" expanded="true" />
@@ -347,7 +347,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EmployeeAmqpTest">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.EmployeeService.EmployeeApiApplication" />
       <module name="EmployeeService" />
@@ -863,8 +863,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2291">
-          <caret line="176" selection-start-line="176" selection-end-line="176" />
+        <state relative-caret-position="326">
+          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3363#3373#0" expanded="true" />
