@@ -125,8 +125,8 @@ public class RabbitMqListener {
                 Employee newEmployee = employees.get(1);
 
                 Employee oldEmployeeFromDB = employeeRepository.findById(oldEmployee.getId()).get();
-                oldEmployeeFromDB.setData(newEmployee.getFullName());
-                employeeRepository.save(oldEmployee);
+                oldEmployeeFromDB.setData(newEmployee);
+                employeeRepository.save(oldEmployeeFromDB);
                 new RabbitMqPublisher().sendUpdatedMessage(rabbitTemplate, oldEmployee, newEmployee);
                 //return null;
                 /*Employee employee =  new ObjectMapper().readValue(body, Employee.class);
@@ -140,6 +140,20 @@ public class RabbitMqListener {
                         e.printStackTrace();
                     }
                 }*/
+            }else if (EMPLOYEE_CREATE_EVENT.equals(action)) {
+                System.out.println("get message with action "+action+" "+body);
+                //return null;
+                Employee employee =  new ObjectMapper().readValue(body, Employee.class);
+                employeeRepository.save(employee);
+                if (employeeRepository.findById(employee.getId()).isPresent()){
+                    try {
+                        new RabbitMqPublisher().sendCreatedMessage(rabbitTemplate, employee);
+
+                    } catch (JsonProcessingException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                }
             }
         } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
