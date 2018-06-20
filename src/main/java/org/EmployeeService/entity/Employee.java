@@ -1,13 +1,19 @@
 package org.EmployeeService.entity;
 
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import java.io.Serializable;
 
+
 @Entity
+@Data
+@NoArgsConstructor
 public class Employee implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -17,31 +23,6 @@ public class Employee implements Serializable {
     public Employee(Employee employee) {
         this.id = employee.getId();
         this.fullName=employee.getFullName();
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
-    }
-
-    public String getFullName() {
-        return fullName;
-    }
-
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
-    }
-
-
-    public void setData(Employee empl) {
-        this.fullName = empl.getFullName();
-
-    }
-
-    public Employee() {
     }
 
     @Override
@@ -73,5 +54,10 @@ public class Employee implements Serializable {
                 "id=" + id +
                 ", fullName='" + fullName + '\'' +
                 '}';
+    }
+
+    public void setData(Employee newEmployee) {
+        this.id=newEmployee.getId();
+        this.fullName=newEmployee.getFullName();
     }
 }

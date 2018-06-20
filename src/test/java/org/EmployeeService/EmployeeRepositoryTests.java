@@ -23,12 +23,15 @@ public class EmployeeRepositoryTests {
     EmployeeRepository employeeRepository;
 
     @Test
-    public void test1JpaCreate() {
+    public void test1JpaCreate() throws InterruptedException {
         //Insert
         Stream.of(new Employee("Alexander"), new Employee("Nikita"), new Employee("Alesya"))
                 .forEach(employee -> {
                     employeeRepository.save(employee);
                 });
+
+        Thread.sleep(100);
+
         List<Employee> employees = employeeRepository.findAll();
         assertThat(employees != null).isTrue();
         assertThat(employees.size() == 3).isTrue();

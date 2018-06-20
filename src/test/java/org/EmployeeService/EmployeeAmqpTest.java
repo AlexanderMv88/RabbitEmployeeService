@@ -79,6 +79,8 @@ public class EmployeeAmqpTest {
         rabbitTemplate.setExchange(TO_SERVICE_EMPLOYEE_FANOUT_EXCHANGE);
         rabbitTemplate.send(msg);
 
+        Thread.sleep(100);
+
         List<Employee> employees = employeeRepository.findByFullName("Дима");
         assertThat(employees != null).isTrue();
         assertThat(employees.size() == 1).isTrue();
@@ -106,7 +108,7 @@ public class EmployeeAmqpTest {
         rabbitTemplate.setExchange(TO_SERVICE_EMPLOYEE_FANOUT_EXCHANGE);
         rabbitTemplate.send(msg);
 
-        Thread.sleep(500);
+        Thread.sleep(100);
 
         List<Employee> employeesFromDB = employeeRepository.findByFullName("Диман");
         assertThat(employeesFromDB != null).isTrue();
@@ -125,7 +127,7 @@ public class EmployeeAmqpTest {
         rabbitTemplate.setExchange(TO_SERVICE_EMPLOYEE_FANOUT_EXCHANGE);
         rabbitTemplate.send(msg);
 
-        Thread.sleep(500);
+        Thread.sleep(100);
 
         List<Employee> employees = employeeRepository.findByFullName("Дима");
         //assertThat(employees == null).isTrue();
