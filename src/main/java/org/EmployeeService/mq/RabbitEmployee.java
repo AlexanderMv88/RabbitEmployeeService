@@ -2,12 +2,10 @@ package org.EmployeeService.mq;
 
 public class RabbitEmployee {
 
-
     public static final String EMPLOYEE_SELECT_EVENT = "employee-select-event";
     public static final String EMPLOYEE_DELETE_EVENT = "employee-delete-event";
     public static final String EMPLOYEE_CREATE_EVENT = "employee-create-event";
     public static final String EMPLOYEE_UPDATE_EVENT = "employee-update-event";
-
 
     public static final String EMPLOYEE_CREATED_EVENT = "employee-created-event";
     public static final String EMPLOYEE_DELETED_EVENT = "employee-deleted-event";

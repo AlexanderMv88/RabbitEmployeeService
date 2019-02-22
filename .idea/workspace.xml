@@ -18,8 +18,8 @@
       <file leaf-file-name="RabbitMqListener.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+            <state relative-caret-position="-1578">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -27,11 +27,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Employee.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/entity/Employee.java">
+      <file leaf-file-name="RabbitMqPublisher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqPublisher.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
+            <state relative-caret-position="402">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -39,26 +42,17 @@
       <file leaf-file-name="RabbitConfiguration.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="51" column="44" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="44" />
+            <state relative-caret-position="636">
+              <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RabbitMessage.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMessage.java">
+      <file leaf-file-name="EmployeeRepository.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/repository/EmployeeRepository.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="76" selection-start-line="76" selection-end-line="79" selection-end-column="21" />
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -66,8 +60,8 @@
       <file leaf-file-name="EmployeeRepositoryTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRepositoryTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+            <state relative-caret-position="-153">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,26 +69,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/controller/AppController.java">
+      <file leaf-file-name="EmployeeApiApplication.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeApiApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="545">
-              <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#536#537#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeRestTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeRestTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRestTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
+            <state relative-caret-position="-33">
+              <caret line="187" column="7" lean-forward="true" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RabbitMessage.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMessage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -102,20 +106,21 @@
       <file leaf-file-name="EmployeeAmqpTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+            <state relative-caret-position="177">
+              <caret line="133" column="31" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3538#3548#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RabbitEmployee.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RabbitEmployee.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitEmployee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+            <state relative-caret-position="30">
+              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -191,18 +196,22 @@
         <option value="$PROJECT_DIR$/src/main/java/org/EmployeeApi/mq/RabbitMqListener.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/EmployeeApi/EmployeeRestTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/EmployeeApi/controller/AppController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqPublisher.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/controller/AppController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqListener.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRestTests.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeAMQPTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeAmqpTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/repository/EmployeeAmqpTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitEmployee.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/entity/Employee.java" />
-        <option value="$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRepositoryTests.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeApiApplication.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqListener.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqPublisher.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMessage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitEmployee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/controller/AppController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/EmployeeService/repository/EmployeeRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRestTests.java" />
       </list>
     </option>
   </component>
@@ -227,82 +236,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="EmployeeService" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
-            </path>
-            <path>
-              <item name="EmployeeService" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
-              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="EmployeeService" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
-              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
-              <item name="controller" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="EmployeeService" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
-              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
-              <item name="entity" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="EmployeeService" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
-              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
-              <item name="mq" type="1f31426a:PackageElementNode" />
-            </path>
-            <path>
-              <item name="EmployeeService" type="58d84e3e:PackageViewProjectNode" />
-              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
-              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
-              <item name="repository" type="1f31426a:PackageElementNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -310,8 +281,8 @@
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -319,20 +290,70 @@
               <item name="entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="EmployeeService" type="b2602c69:ProjectViewProjectNode" />
-              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
               <item name="mq" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RabbitEmployeeService" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RabbitEmployeeService" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="EmployeeService" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="RabbitEmployeeService" type="58d84e3e:PackageViewProjectNode" />
+              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="RabbitEmployeeService" type="58d84e3e:PackageViewProjectNode" />
+              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
+              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="RabbitEmployeeService" type="58d84e3e:PackageViewProjectNode" />
+              <item name="EmployeeService" type="616d4139:PackageViewModuleNode" />
+              <item name="org.EmployeeService" type="1f31426a:PackageElementNode" />
+              <item name="mq" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,6 +363,7 @@
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -437,6 +459,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="all tests" type="JUnit" factoryName="JUnit">
+      <module name="EmployeeService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.EmployeeService.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="org.EmployeeService" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="test in EmployeeService [1]" type="JUnit" factoryName="JUnit" nameIsGenerated="true" repeat_mode="N Times">
       <module name="EmployeeService" />
       <extension name="coverage">
@@ -486,6 +531,7 @@
     <list>
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.test in EmployeeService [1]" />
+      <item itemvalue="JUnit.all tests" />
       <item itemvalue="JUnit.EmployeeAmqpTest" />
       <item itemvalue="JUnit.EmployeeAmqpTest.test2Update" />
     </list>
@@ -510,35 +556,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="test_in_EmployeeService - 2018.06.20 at 11h 15m 00s.xml">
-      <configuration name="test in EmployeeService" configurationId="JUnit" />
+    <history-entry file="all_tests - 2019.02.22 at 00h 54m 50s.xml">
+      <configuration name="all tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService - 2018.06.20 at 11h 18m 22s.xml">
-      <configuration name="test in EmployeeService" configurationId="JUnit" />
+    <history-entry file="all_tests - 2019.02.22 at 00h 55m 39s.xml">
+      <configuration name="all tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[2] - 2018.06.20 at 11h 19m 10s.xml">
-      <configuration name="test in EmployeeService [2]" configurationId="JUnit" />
+    <history-entry file="all_tests - 2019.02.22 at 01h 02m 55s.xml">
+      <configuration name="all tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[2] - 2018.06.20 at 11h 19m 41s.xml">
-      <configuration name="test in EmployeeService [2]" configurationId="JUnit" />
+    <history-entry file="EmployeeAmqpTest - 2019.02.22 at 01h 03m 13s.xml">
+      <configuration name="EmployeeAmqpTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[2] - 2018.06.20 at 11h 21m 21s.xml">
-      <configuration name="test in EmployeeService [2]" configurationId="JUnit" />
+    <history-entry file="all_tests - 2019.02.22 at 01h 05m 34s.xml">
+      <configuration name="all tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[1] - 2018.06.20 at 11h 21m 47s.xml">
-      <configuration name="test in EmployeeService [1]" configurationId="JUnit" />
+    <history-entry file="all_tests - 2019.02.22 at 01h 05m 51s.xml">
+      <configuration name="all tests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[2] - 2018.06.20 at 11h 22m 27s.xml">
-      <configuration name="test in EmployeeService [2]" configurationId="JUnit" />
+    <history-entry file="EmployeeAmqpTest - 2019.02.22 at 06h 21m 11s.xml">
+      <configuration name="EmployeeAmqpTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[2] - 2018.06.20 at 11h 23m 43s.xml">
-      <configuration name="test in EmployeeService [2]" configurationId="JUnit" />
+    <history-entry file="EmployeeAmqpTest - 2019.02.22 at 06h 21m 54s.xml">
+      <configuration name="EmployeeAmqpTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[2] - 2018.06.20 at 11h 24m 25s.xml">
-      <configuration name="test in EmployeeService [2]" configurationId="JUnit" />
+    <history-entry file="EmployeeAmqpTest - 2019.02.22 at 06h 52m 04s.xml">
+      <configuration name="EmployeeAmqpTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="test_in_EmployeeService_[1] - 2018.06.20 at 11h 24m 52s.xml">
-      <configuration name="test in EmployeeService [1]" configurationId="JUnit" />
+    <history-entry file="EmployeeAmqpTest - 2019.02.22 at 06h 55m 17s.xml">
+      <configuration name="EmployeeAmqpTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -558,16 +604,17 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24947916" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25506938" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.37002096" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.36949515" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32975295" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32914045" />
@@ -592,15 +639,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/EmployeeService/controller/AppController.java</url>
-          <line>54</line>
+          <line>53</line>
           <properties />
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqPublisher.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="37" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -657,13 +716,7 @@
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.5.RELEASE/spring-web-5.0.5.RELEASE.jar!/org/springframework/http/ResponseEntity.class" />
     <entry file="file://$PROJECT_DIR$/src/test/java/org/ChatApi/ChatApiApplicationTests.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeApiApplication.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.2.3.RELEASE/spring-cloud-context-1.2.3.RELEASE.jar!/org/springframework/cloud/bootstrap/BootstrapApplicationListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="81" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-context/1.2.3.RELEASE/spring-cloud-context-1.2.3.RELEASE.jar!/org/springframework/cloud/bootstrap/BootstrapApplicationListener.class" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeApi/mq/RabbitConfig.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeApi/mq/Subscriber.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeApi/mq/EmployeeMessageListener.java" />
@@ -700,40 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/repository/EmployeeRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqPublisher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="36" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeApiApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeAmqpTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/repository/EmployeeAmqpTest.java" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-messaging/5.0.6.RELEASE/spring-messaging-5.0.6.RELEASE.jar!/org/springframework/messaging/handler/invocation/InvocableHandlerMethod.class">
@@ -750,57 +769,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="16" lean-forward="true" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="76" selection-start-line="76" selection-end-line="79" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="81" column="26" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRestTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="70" column="16" selection-start-line="70" selection-start-column="16" selection-end-line="70" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRepositoryTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="356">
+          <caret line="66" column="64" selection-start-line="65" selection-start-column="12" selection-end-line="66" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/controller/AppController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="545">
-          <caret line="104" column="13" selection-start-line="104" selection-start-column="13" selection-end-line="104" selection-end-column="13" />
+        <state relative-caret-position="-738">
+          <caret line="63" column="8" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -809,29 +795,98 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/entity/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
+        <state relative-caret-position="402">
           <caret line="60" column="48" selection-start-line="60" selection-start-column="48" selection-end-line="60" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="51" column="44" selection-start-line="51" selection-start-column="17" selection-end-line="51" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state relative-caret-position="636">
+          <caret line="59" column="5" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitEmployee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        <state relative-caret-position="30">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMessage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1578">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/mq/RabbitMqPublisher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/repository/EmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/EmployeeService/EmployeeApiApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#536#537#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeAmqpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="133" column="31" selection-start-line="133" selection-start-column="31" selection-end-line="133" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3538#3548#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRepositoryTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/org/EmployeeService/EmployeeRestTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-33">
+          <caret line="187" column="7" lean-forward="true" selection-start-line="187" selection-start-column="7" selection-end-line="187" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

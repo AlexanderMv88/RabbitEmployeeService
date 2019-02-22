@@ -98,7 +98,6 @@ public class RabbitMqListener {
                 String jsonEmployees =  new ObjectMapper().writeValueAsString(employees);
                 return  jsonEmployees;
 
-
             }else if (EMPLOYEE_DELETE_EVENT.equals(action)) {
                 System.out.println("get message with action "+action+" "+body);
                 //return null;

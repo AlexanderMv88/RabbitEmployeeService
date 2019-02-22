@@ -8,6 +8,4 @@ import java.util.List;
 public interface EmployeeRepository extends JpaRepository<Employee, Long> {
 
     List<Employee> findByFullName(String fullName);
-
-
 }

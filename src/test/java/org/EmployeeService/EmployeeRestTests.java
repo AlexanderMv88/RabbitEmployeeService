@@ -41,10 +41,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 public class EmployeeRestTests {
 
-
     @Autowired
     private MockMvc mvc;
-
 
     private HttpMessageConverter mappingJackson2HttpMessageConverter;
 
@@ -100,26 +98,19 @@ public class EmployeeRestTests {
                 .andExpect(status().isCreated());
     }
 
-
-
     @Test
     public void test3Get() throws Exception {
         //employeeRepository.save(new Employee("Дима"));
-
         mvc.perform(get("/api/findBy?fullName=Дима")
                 //.with(httpBasic("Alexander", "12345"))
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
                 .andExpect(jsonPath("$[0].fullName", is("Дима")));
-
-
     }
 
     @Test
     public void test4PutNotFound() throws Exception {
-
-
         ResultActions res = mvc.perform(put("/api/changeUser/")
                 //.with(httpBasic("Alexander", "12345"))
                 .contentType(MediaType.APPLICATION_JSON))
@@ -133,7 +124,6 @@ public class EmployeeRestTests {
 
         employee.setFullName(null);
         String jsonObj = json(employee);
-
         mvc.perform(put("/api/changeEmployee/"+ employee.getId())
                 //.with(httpBasic("Alexander", "12345"))
                 .contentType(MediaType.APPLICATION_JSON)
@@ -149,7 +139,6 @@ public class EmployeeRestTests {
 
         employee.setFullName("Дмитрий Палыч");
         String jsonObj = json(employee);
-
         mvc.perform(put("/api/changeEmployee/"+ employee.getId())
                 //.with(httpBasic("Alexander", "12345"))
                 .contentType(MediaType.APPLICATION_JSON)
@@ -216,7 +205,6 @@ public class EmployeeRestTests {
 
 
     private Employee getByName(String name) {
-
         MvcResult result = null;
         try {
             result = mvc.perform(get("/api/findBy?fullName=" + name)
@@ -238,7 +226,6 @@ public class EmployeeRestTests {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
 
         return null;
     }

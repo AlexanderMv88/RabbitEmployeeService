@@ -32,7 +32,6 @@ public class AppController {
     @Autowired
     private RabbitTemplate rabbitTemplate;
 
-
     @RequestMapping(value = "/findBy", method=RequestMethod.GET)
     public List<Employee> findByFullName(@RequestParam(value="fullName") String fullName){
         return employeeRepository.findByFullName(fullName);
@@ -46,20 +45,18 @@ public class AppController {
     @RequestMapping(value = "/init", method=RequestMethod.GET)
     public void init(){
         Stream.of(new Employee("Alexander"), new Employee("Nikita"), new Employee("Alesya"))
-                .forEach(employee -> {
-                    String jsonEmployee= null;
-                    try {
-                        Employee empl = employeeRepository.save(employee);
-                        new RabbitMqPublisher().sendCreatedMessage(rabbitTemplate,empl);
+            .forEach(employee -> {
+                String jsonEmployee= null;
+                try {
+                    Employee empl = employeeRepository.save(employee);
+                    new RabbitMqPublisher().sendCreatedMessage(rabbitTemplate,empl);
 
-                    } catch (JsonProcessingException e) {
-                        e.printStackTrace();
-                    }
+                } catch (JsonProcessingException e) {
+                    e.printStackTrace();
+                }
 
-                });
-        
+            });
     }
-
 
     @RequestMapping(value = "/addEmployee", method = RequestMethod.POST)
     public ResponseEntity<?> createEmployee(@RequestBody Employee employee){
@@ -78,7 +75,6 @@ public class AppController {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
-
         return null;
     }
 
@@ -142,10 +138,5 @@ public class AppController {
         }else{
             return ResponseEntity.notFound().build();
         }
-
     }
-
-
-
-
 }

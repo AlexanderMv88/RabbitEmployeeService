@@ -14,7 +14,6 @@ import static org.EmployeeService.mq.RabbitMessage.createMessage;
 
 public class RabbitMqPublisher {
 
-
     public void sendDeletedMessage(RabbitTemplate rabbitTemplate, Employee employee) throws JsonProcessingException {
         String jsonEmployeeForRemove= new ObjectMapper().writeValueAsString(employee);
         Message msg = createMessage(EMPLOYEE_DELETED_EVENT, jsonEmployeeForRemove);

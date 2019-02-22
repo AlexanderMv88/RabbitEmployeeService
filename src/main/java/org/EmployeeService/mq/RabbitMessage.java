@@ -8,6 +8,5 @@ public class RabbitMessage {
         return MessageBuilder.withBody(payload.getBytes())
                 .setHeader("action", action)
                 .build();
-
     }
 }

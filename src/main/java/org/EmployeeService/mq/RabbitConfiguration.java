@@ -3,6 +3,7 @@ package org.EmployeeService.mq;
 
 
 import org.springframework.amqp.core.*;
+import org.springframework.amqp.rabbit.annotation.EnableRabbit;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitAdmin;
@@ -13,18 +14,16 @@ import org.springframework.context.annotation.Configuration;
 import static org.EmployeeService.mq.RabbitEmployee.*;
 
 
+@EnableRabbit
 @Configuration
 public class RabbitConfiguration {
-
-
-
 
     @Bean
     public ConnectionFactory connectionFactory() {
         CachingConnectionFactory connectionFactory =
-                new CachingConnectionFactory("172.16.175.128");
-        connectionFactory.setUsername("admin");
-        connectionFactory.setPassword("admin");
+                new CachingConnectionFactory("localhost");
+        connectionFactory.setUsername("guest");
+        connectionFactory.setPassword("guest");
         return connectionFactory;
     }
 
@@ -38,14 +37,11 @@ public class RabbitConfiguration {
         return new RabbitTemplate(connectionFactory());
     }
 
-
     //Создается exchange. Для отправки состояния
     @Bean
     public FanoutExchange fromServiceEmployeeFanoutExchange(){
         return new FanoutExchange(FROM_SERVICE_EMPLOYEE_FANOUT_EXCHANGE);
     }
-
-
 
     //Для получения запросов
     @Bean
@@ -62,7 +58,4 @@ public class RabbitConfiguration {
     public Binding bindingQueueToFanoutExchange(){
         return BindingBuilder.bind(toServiceEmployeeEventQueue()).to(toServiceEmployeeFanoutExchange());
     }
-
-
-
 }
